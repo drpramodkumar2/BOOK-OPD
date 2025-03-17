@@ -65,7 +65,7 @@
             <p>Expert Pediatric Care by Dr. Pramod</p>
         </header>
 
-        <form action="#" method="POST" onsubmit="sendSMS(event)">
+        <form action="https://formsubmit.co/drkumarpramod77@gmail.com" method="POST" onsubmit="sendSMS(event)">
             <label for="name">Child's Name</label>
             <input type="text" id="name" name="name" placeholder="Enter child's name" required>
 
@@ -77,7 +77,6 @@
 
             <label for="time">Preferred Time</label>
             <select id="time" name="time" required>
-                <!-- Morning Slots (9:00 AM to 2:00 PM) -->
                 <option value="09:00">09:00 AM</option>
                 <option value="09:15">09:15 AM</option>
                 <option value="09:30">09:30 AM</option>
@@ -128,7 +127,7 @@
             <select id="reason" name="reason" required>
                 <option value="Sickness">Sickness</option>
                 <option value="Vaccination">Vaccination</option>
-                <option value="Follow up visit">Follow up visit</option>
+                <option value="Follow Up Visit">Follow Up Visit</option>
             </select>
 
             <button type="submit">Book Appointment</button>
@@ -141,10 +140,8 @@
 
     <script>
         function sendSMS(event) {
-            event.preventDefault();
             const phoneNumber = document.getElementById('phone').value;
             alert(`Appointment successfully booked. Confirmation SMS will be sent to ${phoneNumber}.`);
-            console.log('Sending SMS to: 7042230547');
         }
     </script>
 </body>
